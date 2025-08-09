@@ -20,11 +20,11 @@ tree_width = int(WIDTH * 0.1)
 tree_x = WIDTH // 2 - tree_width // 2
 
 branch_length = int(WIDTH * 0.22)
-branch_height = 110  # Boşluk arttı
-branch_thickness = 25  # Dallar biraz ince
+branch_height = 110
+branch_thickness = 25
 
 player_width = int(WIDTH * 0.08)
-player_height = 55  # Biraz büyüdü
+player_height = 55
 player_side = "left"
 
 score = 0
@@ -75,7 +75,7 @@ def move_player(side):
 
 def draw_score():
     text = font.render(f"Score: {score}", True, BLACK)
-    win.blit(text, (10, 50))  # Yazıyı biraz daha aşağı aldım
+    win.blit(text, (10, 50))
 
 def draw_game_over():
     lines = [
